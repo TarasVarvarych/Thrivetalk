@@ -1,0 +1,139 @@
+:root {
+    --barnd-color: #62D0DF;
+    --text-color: #22356F; 
+    --tex-color-semi-transparent: #22356F80;
+    --text-color-secondary: #FAB63E;
+    --text-color-white: #FFFFFF;
+
+
+}
+
+
+img {display: block;}
+
+h1, h2, h3, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+a {text-decoration: none;}
+
+
+/* header */ 
+
+/* width 1129 */
+.header {
+    padding: 27px 360px 82px 179px;
+}
+
+.header-div {
+    display: flex;
+    width: 1129px;
+
+
+}
+
+.logo {
+    font-size: 24px;
+    line-height: calc(27 / 24);
+    letter-spacing: -0.035em;
+    color: var(--barnd-color);
+    margin-right: auto;
+
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--text-color);
+    display: block;
+    padding: 10px 0;
+
+}
+
+.nav-list > .item:not(:last-child) {
+    margin-right: 27px;
+}
+
+.contact-button {
+    margin-left: auto;
+    color: var(--text-color-white);
+    background-color: var(--barnd-color);
+    border-radius: 50px;
+    border-color: transparent;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+
+}
+
+.current {
+    border-bottom: 1px solid var(--text-color);
+    box-shadow: inset 0px -1px 0px #22356F;
+ 
+}
+
+
+/*  HERO */
+
+.hero-div {
+    display: block;
+    width: 484px;
+    margin-left: 179px;
+    padding-top: 82px;
+    padding-bottom: 77px;
+}
+
+.hero-title {
+    font-size: 48px;
+    line-height: calc(53 / 48);
+    letter-spacing: -0.035em;
+    color: var(--text-color);
+} 
+
+.hero-text {
+    font-size: 24px;
+    line-height: calc(42 / 24);
+    color: var(--text-color);
+    margin-bottom: 63px;
+    margin-top: 77px;
+}
+
+.hero-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+  
+}
+
+.hero-list > .item:not(:last-child) {
+    margin-right: 38px;
+
+}
+
+.hero-button {
+    font-size: 16px;
+    line-height: calc(23 / 16);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    border-color: transparent;
+}
+
+.hero-button.first {
+    color: var(--text-color-white);
+    background-color: var(--text-color-secondary);
+}
+
+.hero-button.second {
+    color: var(--text-color-secondary);
+    background-color: var(--text-color-white);
+}
