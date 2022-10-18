@@ -8,6 +8,9 @@
 
 }
 
+body {width: 1440px;
+margin: 0 auto;}
+
 
 img {display: block;}
 
@@ -19,6 +22,19 @@ h1, h2, h3, p, ul {
 
 a {text-decoration: none;}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 /* header */ 
 
@@ -97,6 +113,7 @@ a {text-decoration: none;}
     line-height: calc(53 / 48);
     letter-spacing: -0.035em;
     color: var(--text-color);
+    margin-top: 54px;
 } 
 
 .hero-text {
@@ -136,4 +153,357 @@ a {text-decoration: none;}
 .hero-button.second {
     color: var(--text-color-secondary);
     background-color: var(--text-color-white);
+}
+
+/*  WHY THRIVE */ 
+
+.why-div {
+    width: 555px;
+    margin-left: 179px;
+    margin-right: 181px;
+}
+
+.why-section {
+    display: flex;
+    color: var(--text-color-white);
+    background-color: var(--barnd-color);
+}
+
+
+.why-title {
+    font-size: 36px;
+    line-height: calc(27 / 36);
+    letter-spacing: -0.006em;
+    margin-top: 151px;
+    margin-bottom: 73px;
+}
+
+.why-section p {
+    font-size: 24px;
+    line-height: calc(35 / 24);
+    margin-bottom: 97px;
+}
+
+.about-section {
+    padding-top: 150px;
+    padding-left: 106px;
+    display: flex;
+}
+
+.about-div {
+    width: 592px;
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: calc(34 / 24);
+    letter-spacing: 0.005em;
+    margin-left: 225px;
+}
+
+.about-title {
+    font-size: 16px;
+    line-height: calc(23 / 16);
+    letter-spacing: 0.06em;
+    color: var(--text-color);
+
+}
+
+
+/* WE CAN HELP */ 
+
+.help-section {
+    padding-top: 115px;
+    padding-bottom: 120px;
+    
+}
+
+.help-title {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--tex-color-semi-transparent);
+}
+
+.help-list {
+    display: flex;
+    margin-top: 24px;
+    color: var(--text-color-white);
+    align-content: center;
+    list-style-type: none;
+    
+}
+
+.help-list > .item {
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    padding-left: 52.5px;
+    padding-right: 52.5px;
+}
+
+.help-list > .item.lifting {
+    background-color: #FFE2DE;
+}
+
+.help-list > .item.running {
+    background-color: #C4E769;
+}
+
+.help-list > .item.pumping {
+    background-color: var(--barnd-color);
+}
+
+.help-list > .item.iron {
+    background-color:  #0052C1;
+}
+
+.help-list > .item p {
+    font-size: 32px;
+    line-height: calc(34 / 32);
+    letter-spacing: -0.006em;
+    margin-top: 23px;
+    margin-right: auto;
+
+}
+
+.help-list > .item .box {
+    width: 255px;
+    height: 72px;
+    border-bottom: 1px solid var(--text-color-white);
+}
+.help-list > .item span {
+    color: var(--text-color-secondary);
+    margin-right: 15px;
+}
+
+/* Services 1 */
+
+.services {
+    padding-bottom: 22px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+}
+
+.services-list > .item {
+    width: 480px;
+    height: 480px;
+    color: var(--text-color-white);
+    font-size: 32px;
+    line-height: calc(34 / 32);
+    letter-spacing: -0.006em;
+    padding: 0 70px;
+}
+
+.physical {
+    background-color: var(--text-color);
+}
+
+.mental {
+    background-color:#0052C1;
+}
+
+.nutrition {
+    background-image: url(../images/strawberry-cocktail.png);
+}
+
+.gymnastics {
+    background-color: #62D0DF;
+}
+
+.crossfit {
+    background-color: #DEE1FF;
+}
+
+.aerobics {
+   background-color: #8F00FF;
+}
+
+.services-div {
+    width: 340px;
+    height: 96px;
+    border-bottom: 1px solid var(--text-color-white);
+    margin-bottom: 30px;
+}
+
+.services-list > .item span {
+    color: var(--text-color-secondary);
+}
+
+/* Benefits */
+
+.benefits {
+    margin-bottom: 40px;
+}
+
+.benefits-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.benefits-list .item {
+    flex-basis: calc(100% / 3);
+    padding: 55px 77px 37px 105px;
+    color: var(--tex-color-semi-transparent);
+    font-size: 16px;
+    line-height: calc(25 / 16);
+    letter-spacing: -0.03em;
+    
+}
+
+.benefits-title {
+    color: var(--text-color);
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    letter-spacing: -0.03em;
+    margin-bottom: 28px;
+} 
+
+
+/* facts */
+
+.facts {
+    display: flex;
+    color: var(--text-color);
+}
+
+.facts-div {
+    padding: 103px 175px 42px 106px;
+}
+
+.facts-title {
+    font-size: 16px;
+    line-height: calc(12 / 16);
+    letter-spacing: 0.06em;
+    margin-bottom: 225px;
+}
+
+.facts-text, .facts-text .logo {
+    font-size: 36px;
+    line-height: calc(53 / 36);
+    letter-spacing: -0.01em;
+
+}
+
+.help-link {
+    display: block;
+    color: var(--text-color-secondary);
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    margin-top: 152px;
+}
+
+/* CONTACT US */
+
+.contact {
+    display: flex;
+    background-color: var(--text-color);
+    color: var(--text-color-white);
+}
+
+.contact-div {
+    margin: 103px 201px 59px 180px;
+}
+
+
+.contact-title {
+    font-size: 16px;
+    line-height: calc(12 / 16);
+    letter-spacing: 0.06em;
+    margin-bottom: 230px;
+
+}
+
+.contact-title-second {
+    font-size: 64px;
+    line-height: calc(94 / 64);
+    letter-spacing: -0.01em;
+    margin-bottom: 75px;
+}
+
+.contact-text {
+    font-size: 36px;
+    line-height: calc(53 / 36);
+    letter-spacing: -0.005em;
+
+}
+
+.contact-help {
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    letter-spacing: 0.1em;
+    color: var(--barnd-color);
+    margin-top: 93px;
+}
+
+/* FOOTER */ 
+
+.footer {
+    display: flex;
+}
+
+.footer-div {
+    display: flex;
+    margin: 98px 40px 74px 68px;
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-list .title {
+    font-size: 14px;
+    line-height: calc(11 / 14);
+    letter-spacing: -0.006em;
+    color: var(--text-color);
+    margin-bottom: 59px;
+}
+
+
+.footer-list > .item:not(:last-child) {
+    margin-right: 72px;
+}
+
+
+.footer-list > .item {
+    font-size: 14px;
+    line-height: calc(23 / 14);
+    letter-spacing: -0.006em;
+    color: var(--tex-color-semi-transparent);
+
+}
+
+.address {
+    font-style: normal;
+}
+
+.footer-list > .item .link {
+    color: var(--barnd-color);
+    display: block;
+}
+
+.footer-list > .item .tel {
+    color: var(--tex-color-semi-transparent);
+    margin-top: 40px;
+    display: block;
+}
+
+.copy {
+    color: var(--text-color-white);
+    background-color: var(--barnd-color);
+    font-size: 14px;
+    line-height: calc(11 / 14);
+    letter-spacing: -0.006em;
+    padding-top: 32px;
+    padding-bottom: 26px;
+    padding-left: 179px;
 }
